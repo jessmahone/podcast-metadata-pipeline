@@ -1,5 +1,5 @@
 # podcast-metadata-pipeline
-A dbt + PostgreSQL content metadata pipeline built on Podcast Index data
+A dbt + PostgreSQL content metadata pipeline built on Podcast Index API data
 
 
 ## License
