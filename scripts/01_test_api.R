@@ -41,3 +41,28 @@ str(parsed, max.level = 1)
 
 # Look at the structure of a single feed
 str(parsed$feeds[[1]])
+
+auth_time <- as.character(unix_time)
+
+response_cats <- request("https://api.podcastindex.org/api/1.0/categories/list") |>
+  req_headers(
+    "X-Auth-Key" = api_key,
+    "X-Auth-Date" = auth_time,
+    "Authorization" = digest(
+      paste0(api_key, api_secret, auth_time),
+      algo = "sha1", serialize = FALSE
+    ),
+    "User-Agent" = "PodcastPortfolioProject/1.0"
+  ) |>
+  req_perform()
+
+parsed_cats <- response_cats |> resp_body_json()
+parsed_cats
+
+# Flatten the category list into a readable data frame
+cats_df <- do.call(rbind, lapply(parsed_cats$feeds, function(x) {
+  data.frame(id = x$id, name = x$name, stringsAsFactors = FALSE)
+}))
+
+# View it
+View(cats_df)
