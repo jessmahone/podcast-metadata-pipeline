@@ -8,6 +8,9 @@ This project demonstrates a full analytics engineering workflow — API extracti
 
 **Market Opportunity:** Where is the podcast market crowded, and where are the gaps? This mart supports teams analyzing category saturation, language distribution, and publisher dominance.
 
+## Status
+Extraction layer complete. dbt staging and mart models in progress.
+
 ## Pipeline Architecture
 1. **Extract:** R scripts query the Podcast Index API for trending podcasts across 19 categories, then enrich each result with full feed metadata
 2. **Load:** Raw data lands in PostgreSQL
