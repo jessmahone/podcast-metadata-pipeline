@@ -1,0 +1,90 @@
+[0m17:36:44.740003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075ba150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a7ce60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a7cef0>]}
+
+
+============================== 17:36:44.743493 | d2fd2ae2-c4fc-4ca0-b4a6-44ff460201dc ==============================
+[0m17:36:44.743493 [info ] [MainThread]: Running with dbt=1.11.8
+[0m17:36:44.743817 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'invocation_command': 'dbt init', 'quiet': 'False', 'log_path': 'logs', 'version_check': 'True', 'target_path': 'None', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'static_parser': 'True', 'introspect': 'True', 'debug': 'False', 'write_json': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'use_colors': 'True', 'profiles_dir': '/Users/jessicamahone/.dbt', 'partial_parse': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'indirect_selection': 'eager'}
+[0m17:36:44.759896 [info ] [MainThread]: Creating dbt configuration folder at /Users/jessicamahone/.dbt
+[0m17:37:15.699801 [debug] [MainThread]: Starter project path: /Users/jessicamahone/.pyenv/versions/3.12.13/lib/python3.12/site-packages/dbt/include/starter_project
+[0m17:37:15.710528 [info ] [MainThread]: 
+Your new dbt project "podcast_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:37:15.711064 [info ] [MainThread]: Setting up your profile.
+[0m17:40:17.296477 [info ] [MainThread]: Profile podcast_pipeline written to /Users/jessicamahone/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:40:17.603573 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 212.91818, "process_in_blocks": "0", "process_kernel_time": 0.184421, "process_mem_max_rss": "108363776", "process_out_blocks": "0", "process_user_time": 0.88652}
+[0m17:40:17.605321 [debug] [MainThread]: Command `dbt init` succeeded at 17:40:17.604937 after 212.92 seconds
+[0m17:40:17.606687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10784f5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075ba150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078370b0>]}
+[0m17:40:17.607307 [debug] [MainThread]: Flushing usage events
+[0m17:40:17.945237 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:40:39.812368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106495880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b13c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b13950>]}
+
+
+============================== 17:40:39.815732 | 4490577d-febb-4afe-b731-11aa060cb740 ==============================
+[0m17:40:39.815732 [info ] [MainThread]: Running with dbt=1.11.8
+[0m17:40:39.816053 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'invocation_command': 'dbt debug', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'no_print': 'None', 'log_path': 'logs', 'empty': 'None', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jessicamahone/.dbt', 'warn_error': 'None', 'use_experimental_parser': 'False', 'debug': 'False', 'quiet': 'False', 'log_format': 'default', 'target_path': 'None', 'printer_width': '80', 'version_check': 'True'}
+[0m17:40:39.828268 [info ] [MainThread]: dbt version: 1.11.8
+[0m17:40:39.828484 [info ] [MainThread]: python version: 3.12.13
+[0m17:40:39.828628 [info ] [MainThread]: python path: /Users/jessicamahone/.pyenv/versions/3.12.13/bin/python3.12
+[0m17:40:39.828762 [info ] [MainThread]: os info: macOS-15.7.4-arm64-arm-64bit
+[0m17:40:39.877571 [info ] [MainThread]: Using profiles dir at /Users/jessicamahone/.dbt
+[0m17:40:39.877819 [info ] [MainThread]: Using profiles.yml file at /Users/jessicamahone/.dbt/profiles.yml
+[0m17:40:39.877969 [info ] [MainThread]: Using dbt_project.yml file at /Users/jessicamahone/Documents/Github/podcast-metadata-pipeline/dbt_project.yml
+[0m17:40:39.878239 [info ] [MainThread]: adapter type: postgres
+[0m17:40:39.878419 [info ] [MainThread]: adapter version: 1.10.0
+[0m17:40:39.878574 [info ] [MainThread]: Configuration:
+[0m17:40:39.878707 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:40:39.878835 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:40:39.878955 [info ] [MainThread]: Required dependencies:
+[0m17:40:39.879116 [debug] [MainThread]: Executing "git --help"
+[0m17:40:39.929200 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:40:39.929719 [debug] [MainThread]: STDERR: "b''"
+[0m17:40:39.929916 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:40:39.930093 [info ] [MainThread]: Connection:
+[0m17:40:39.930259 [info ] [MainThread]:   host: localhost
+[0m17:40:39.930390 [info ] [MainThread]:   port: 5432
+[0m17:40:39.930505 [info ] [MainThread]:   user: jessicamahone
+[0m17:40:39.930617 [info ] [MainThread]:   database: podcast_pipeline
+[0m17:40:39.930734 [info ] [MainThread]:   schema: raw
+[0m17:40:39.930847 [info ] [MainThread]:   connect_timeout: 10
+[0m17:40:39.930964 [info ] [MainThread]:   role: None
+[0m17:40:39.931074 [info ] [MainThread]:   search_path: None
+[0m17:40:39.931183 [info ] [MainThread]:   keepalives_idle: 0
+[0m17:40:39.931290 [info ] [MainThread]:   sslmode: None
+[0m17:40:39.931398 [info ] [MainThread]:   sslcert: None
+[0m17:40:39.931509 [info ] [MainThread]:   sslkey: None
+[0m17:40:39.931626 [info ] [MainThread]:   sslrootcert: None
+[0m17:40:39.931734 [info ] [MainThread]:   application_name: dbt
+[0m17:40:39.931840 [info ] [MainThread]:   retries: 1
+[0m17:40:39.932144 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m17:40:40.164627 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m17:40:40.193635 [debug] [MainThread]: Using postgres connection "debug"
+[0m17:40:40.193866 [debug] [MainThread]: On debug: select 1 as id
+[0m17:40:40.194003 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:40:40.245212 [debug] [MainThread]: SQL status: SELECT 1 in 0.051 seconds
+[0m17:40:40.246038 [debug] [MainThread]: On debug: Close
+[0m17:40:40.246267 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:40:40.246482 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:40:40.246645 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/jessicamahone/Documents/Github/podcast-metadata-pipeline/dbt_project.yml> not found
+
+[0m17:40:40.249277 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.4845745, "process_in_blocks": "0", "process_kernel_time": 0.193492, "process_mem_max_rss": "120799232", "process_out_blocks": "0", "process_user_time": 0.907146}
+[0m17:40:40.249607 [debug] [MainThread]: Command `dbt debug` failed at 17:40:40.249536 after 0.48 seconds
+[0m17:40:40.249819 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:40:40.250034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064cb0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107aa3b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ab2a20>]}
+[0m17:40:40.250296 [debug] [MainThread]: Flushing usage events
+[0m17:40:40.435814 [debug] [MainThread]: An error was encountered while trying to flush usage events
