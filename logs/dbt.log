@@ -88,3 +88,19 @@ Happy modeling!
 [0m17:40:40.250034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064cb0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107aa3b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ab2a20>]}
 [0m17:40:40.250296 [debug] [MainThread]: Flushing usage events
 [0m17:40:40.435814 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:06:48.679881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cc5e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10582d490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10582cb90>]}
+
+
+============================== 14:06:48.683603 | 5043b137-9cbe-4be3-baac-dfef05acdcc6 ==============================
+[0m14:06:48.683603 [info ] [MainThread]: Running with dbt=1.11.8
+[0m14:06:48.683991 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'invocation_command': 'dbt run --select stg_podcast_categories', 'static_parser': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'no_print': 'None', 'target_path': 'None', 'cache_selected_only': 'False', 'use_colors': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'debug': 'False', 'empty': 'False', 'profiles_dir': '/Users/jessicamahone/.dbt', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'quiet': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'partial_parse': 'True', 'version_check': 'True'}
+[0m14:06:48.684402 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/jessicamahone/Documents/Github/podcast-metadata-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:06:48.692584 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.05825804, "process_in_blocks": "0", "process_kernel_time": 0.15061, "process_mem_max_rss": "108412928", "process_out_blocks": "0", "process_user_time": 0.823114}
+[0m14:06:48.692986 [debug] [MainThread]: Command `dbt run` failed at 14:06:48.692923 after 0.06 seconds
+[0m14:06:48.693277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057f7170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103646420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f97770>]}
+[0m14:06:48.693544 [debug] [MainThread]: Flushing usage events
+[0m14:06:49.125285 [debug] [MainThread]: An error was encountered while trying to flush usage events
